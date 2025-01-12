@@ -1,0 +1,48 @@
+.toggle-day {
+  color: #e5e9f0;
+  background: #3b4252;
+  border-radius: 15px;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Helvetica", cursive;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.toggle-day h1,
+.toggle-day p {
+  margin: 0;
+}
+
+.toggle-day::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  opacity: 0.2;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, #ff0066, #ffcc00, #33cc33, #0066ff);
+  background-size: 400% 400%;
+  animation: borderAnimation 2s linear infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

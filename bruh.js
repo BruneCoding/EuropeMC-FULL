@@ -26,4 +26,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-alert('on Beta Preview')
+alert('on Betea Preview')

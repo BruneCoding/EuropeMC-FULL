@@ -12,10 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleDay.addEventListener("mouseout", function () {
     toggleDay.style.transform = "scale(1)";
     toggleDay.style.opacity = "1";
-       });
+  });
 
-  toggleDay.addEventListener("click", function () {    if (iframe.src.includes("europemc-map-night.pages.dev")) {
-      iframe.src = "https://europemc-map-day.pages.dev";
+  toggleDay.addEventListener("click", function () {
+    if (iframe.src.includes("europemc-map-night.pages.dev")) {
+      iframe.src = "https://europemc-map.pages.dev";
       e.innerHTML = "Night";
     } else {
       iframe.src = "https://europemc-map-night.pages.dev";
@@ -25,4 +26,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
+alert('on Beta Preview')

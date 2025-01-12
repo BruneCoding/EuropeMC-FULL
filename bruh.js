@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
        });
 
   toggleDay.addEventListener("click", function () {    if (iframe.src.includes("europemc-map-night.pages.dev")) {
-      iframe.src = "https://europemc-map.pages.dev";
+      iframe.src = "https://europemc-map-day.pages.dev";
       e.innerHTML = "Night";
     } else {
       iframe.src = "https://europemc-map-night.pages.dev";
